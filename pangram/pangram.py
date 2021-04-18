@@ -1,5 +1,5 @@
 def is_pangram(sentence):
-    '''every letter in a sentence should be [a-z] at least onece otherwhise return False'''
+    """Every letter in a sentence should be [a-z] at least onece otherwhise return False."""
     c = 0
     alphabet = "abcdefghijklmnopqrstuvwxyz"
     phraseLetters = ""
