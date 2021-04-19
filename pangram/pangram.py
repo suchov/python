@@ -1,17 +1,7 @@
 def is_pangram(sentence):
-    """Every letter in a sentence should be [a-z] at least onece otherwhise return False."""
-    c = 0
-    alphabet = "abcdefghijklmnopqrstuvwxyz"
-    phraseLetters = ""
-    for char in sentence.lower():
-        for letter in alphabet:
-            if char == letter and char not in phraseLetters:
-                phraseLetters += char
-    for char in phraseLetters:
-        for letter in alphabet:
-            if char == letter:
-                c += 1
-    if c == 26:
-        return True
-    else:
-        return False
+    '''Every letter in a sentence should be [a-z] at least onece otherwhise return False.'''
+    alphabet = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'}
+    # finding letter by letter in the word and return fase if any missing
+    for c in alphabet:
+        if c not in sentence.lower(): return False
+    return True
